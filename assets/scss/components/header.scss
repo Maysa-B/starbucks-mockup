@@ -1,0 +1,61 @@
+header {
+    .header-swiper {
+        color: $white;
+        
+        .slide {
+            padding: 20px;
+            background-color: $primarycolor;
+            font-weight: 700;
+            letter-spacing: 0.25em;
+            font-size: 18px;
+            line-height: 29px;
+
+            p:hover {
+                text-decoration: underline;
+                text-decoration-color: $mediumgreen;
+                text-decoration-thickness: 3px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    #app-header {
+        height: fit-content;
+        margin-top: 40px;
+        background-color: $primarycolor;
+        color: $white;
+
+        #content {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        a {
+            color: $white;
+            text-decoration: none;
+        }
+
+        button {
+            border-radius: 50px;
+            text-transform: initial;
+        }
+
+        :hover {
+            background-color: $white;
+
+            a, span {
+                color: $primarycolor;
+                svg path{
+                    stroke: $primarycolor;
+                }
+            }
+
+            button {
+                border-color: $primarycolor;
+            }
+
+        }
+    }
+}

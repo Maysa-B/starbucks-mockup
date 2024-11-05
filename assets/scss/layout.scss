@@ -1,0 +1,17 @@
+#layout-default {
+    color: $white;
+    background-color: $neutral;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    margin-left: -12px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: $gray;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+    background: $neutral;
+}

@@ -9,3 +9,5 @@
 
     </v-app>
 </template>
+
+<style lang="scss" src="@/assets/scss/layout.scss" />
