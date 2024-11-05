@@ -20,7 +20,7 @@
         </swiper>
         <v-app-bar flat id="app-header">
             <div id="content">
-                <div class="w-33">
+                <div class="d-flex justify-space-between align-center w-33">
                     <nuxt-link to="#">Explore nossos Cafés</nuxt-link>
                     <nuxt-link to="#">Receitas</nuxt-link>
                     <nuxt-link to="#">Saiba mais</nuxt-link>

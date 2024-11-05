@@ -1,6 +1,6 @@
 <template>
     <v-main>
-        oiiii
+        <Hero />
     </v-main>
 </template>
 
