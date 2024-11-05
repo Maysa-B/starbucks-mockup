@@ -8,8 +8,10 @@
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "nuxt": "^3.12.3"
+  },
   "dependencies": {
-    "nuxt": "^3.14.0",
     "nuxt-swiper": "^1.1.0",
     "sass": "^1.80.4",
     "sass-loader": "^16.0.2",
