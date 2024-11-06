@@ -24,6 +24,7 @@ header {
         margin-top: 40px;
         background-color: $primarycolor;
         color: $white;
+        transition: background-color 1s;
 
         #content {
             width: 100%;

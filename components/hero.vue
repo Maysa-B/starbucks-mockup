@@ -15,7 +15,7 @@
         :creative-effect="{ prev: { shadow: false, translate: ['-20%', 0, -1] }, next: { translate: ['100%', 0, 0] } }"
     >
         <swiper-slide v-for="(s, i) in slides" :key="`s-${i}`">
-            <div :style="`background-image: url(${s.desktop}); width: 100%; height: 600px; background-position: center center; background-size: 100%;background-repeat: no-repeat;`">
+            <div :style="`background-image: url(${s.desktop}); width: 100%; height: 700px; background-position: center center; background-size: 100%;background-repeat: no-repeat;`">
             </div>
         </swiper-slide>
         <div class="swiper-button-prev">
