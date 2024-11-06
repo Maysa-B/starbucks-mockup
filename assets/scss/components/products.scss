@@ -1,0 +1,59 @@
+#products {
+    padding: 50px;
+    color: $primarycolor;
+    text-align: center;
+
+    h3 {
+        font-size: 35px;
+    }
+
+    p {
+        color: $starbucksgreen;
+    }
+
+    .product {
+        img {
+            width: 300px;
+        }
+
+        .title {
+            font-weight: 600;
+        }
+
+        .by {
+            font-size: 15px;
+        }
+
+        .discount {
+            margin-right: 10px;
+            text-decoration: line-through;
+        }
+
+        .up-btn {
+            border: 1px solid $primarycolor;
+            color: $primarycolor;
+            height: 25px;
+            margin-inline: 15px;
+            width: 25px;
+            font-weight: bolder;
+            border-radius: 50%;
+        }
+
+        .up-btn:hover {
+            background-color: $primarycolor;
+            color: $white;
+        }
+        
+        .add-btn {
+            color: $white;
+            background-color: $starbucksgreen;
+            margin-left: 15px;
+            padding: 10px 25px;
+            border-radius: 30px;
+        }
+
+        .add-btn:hover {
+            background-color: $mediumgreen;
+        }
+    }
+}
