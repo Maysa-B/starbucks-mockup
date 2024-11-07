@@ -15,3 +15,14 @@
 ::-webkit-scrollbar-track {
     background: $neutral;
 }
+
+.green-btn {
+    color: $white;
+    background-color: $starbucksgreen;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+
+.green-btn:hover {
+    background-color: $mediumgreen;
+}

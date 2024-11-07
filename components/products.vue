@@ -2,7 +2,7 @@
     <v-col id="products">
         <p>QUERIDINHOS</p>
         <h3>Que tal uma xícara de café?</h3>
-        <v-row class="justify-space-between">
+        <v-row class="justify-center">
             <v-col cols="12" md="3" class="product" v-for="p, i in products" :key="`product-${i}`">
                 <img :src="p.img"></img>
                 <p class="title">{{ p.title }}</p>
@@ -16,7 +16,7 @@
                     <button class="up-btn">-</button>
                     <p>1</p>
                     <button class="up-btn">+</button>
-                    <button class="add-btn">Adicionar</button>
+                    <button class="green-btn ml-5">Adicionar</button>
                 </v-row>
             </v-col>
         </v-row>
