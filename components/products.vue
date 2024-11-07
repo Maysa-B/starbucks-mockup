@@ -1,6 +1,6 @@
 <template>
     <v-col id="products">
-        <p>QUERIDINHOS</p>
+        <p class="detail-text">QUERIDINHOS</p>
         <h3>Que tal uma xícara de café?</h3>
         <v-row class="justify-center">
             <v-col cols="12" md="3" class="product" v-for="p, i in products" :key="`product-${i}`">

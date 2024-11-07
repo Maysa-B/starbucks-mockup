@@ -14,7 +14,7 @@
             <swiper-slide v-for="(p, i) in promoText" :key="`s-${i}`">
                 <v-row class="slide d-flex align-center justify-center">
                     <svg class="pr-3" width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.096"></g><g id="SVGRepo_iconCarrier"> <path d="M17.6842 3.60279C18.2055 2.944 17.7132 2 16.8484 2H10.1317C9.75652 2 9.40996 2.19159 9.22321 2.50227L4.14052 10.9577C3.73978 11.6243 4.2439 12.4554 5.04904 12.4554H8.47764L5.24755 20.5203C4.78108 21.5406 6.04257 22.473 6.89092 21.735L20 9.33119H13.151L17.6842 3.60279Z" stroke="#ffffff" stroke-width="0.672" stroke-linecap="round" stroke-linejoin="round"></path></g></svg>
-                    <p>{{ p }}</p>
+                    <p class="detail-text">{{ p }}</p>
                 </v-row>
             </swiper-slide>
         </swiper>
@@ -41,6 +41,20 @@
 <script setup>
     const promoText = ['USE O CUPOM: PRIMEIROPEDIDO100 E GANHE 10% NO SEU PRIMEIRO PEDIDO*', '*VÁLIDO PARA PEDIDOS ACIMA DE R$ 100 **NÃO VÁLIDO PARA COMBOS']
 
+    const menu = [
+        {
+            title: 'Explore nossos Cafés',
+            submenu: []
+        },
+        {
+            title: 'Receitas',
+            submenu: []
+        },
+        {
+            title: 'Saiba mais',
+            submenu: []
+        }
+    ]
 </script>
 
 <style lang="scss" src="@/assets/scss/components/header.scss"></style>
