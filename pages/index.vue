@@ -9,7 +9,7 @@
         <v-row class="background-green side-text justify-center align-center">
             <v-col cols="12" md="4">
                 <span class="detail-text">PREPARAÇÃO</span>
-                <h4>Níveis de torra</h4>
+                <h4 class="serif-text">Níveis de torra</h4>
                 <p>Qual a torra que prefere? Starbucks® Torra Clara, Torra Média ou Torra Escura? Estas sãos as torras que fazem parte dos níveis de torra Starbucks®</p>
                 <div class="d-flex align-center">
                     <button class="green-btn">Ler o artigo</button>
