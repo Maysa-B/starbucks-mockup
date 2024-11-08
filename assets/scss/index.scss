@@ -5,34 +5,51 @@
 
 .row-text {
     text-align: center;
-    padding: 50px;
+    padding: 76px 120px;
     
     h4 {
-        padding: 10px;
-        font-size: 16px;
+        margin-bottom: 40px;
+        font-size: 20px;
         letter-spacing: 4px;
     }
     
     p {
-        padding: 15px;
+        margin-bottom: 10px;
+        font-weight: 500;
+        letter-spacing: 0.32px;
     }
 }
 
 .side-text {
+    padding: 60px;
+    margin: 0;
+
     span {
         font-weight: bold;
+        letter-spacing: 4px;
     }
 
     h4 {
-        padding-top: 20px;
-        font-size: 53px;
+        padding-top: 10px;
+        font-size: 56px;
         font-weight: 600;
+        font-weight: 500;
     }
 
     p {
-        font-weight: bold;
+        font-weight: 500;
         font-size: 17px;
-        max-width: 500px;
+        max-width: 550px;
         margin-bottom: 30px;
+    }
+
+    button {
+        font-weight: 500;
+        padding: 15px 25px;
+        font-size: 15px;
+    }
+
+    .min {
+        font-size: 13px;
     }
 }
