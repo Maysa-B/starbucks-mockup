@@ -1,5 +1,5 @@
 <template>
-    <v-main>
+    <v-main class="pt-0">
         <Hero />
         <section class="background-green row-text">
             <h4 class="detail-text">CAFÉ STARBUCKS®. Prepare-o em casa, da forma que mais gosta.</h4>

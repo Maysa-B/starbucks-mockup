@@ -1,62 +1,60 @@
-header {
-    .header-swiper {
-        color: $white;
-        
-        .slide {
-            padding: 20px;
-            background-color: $primarycolor;
-            font-weight: 500;
-            letter-spacing: 5.5px;
-            font-size: 20px;
-            line-height: 29px;
+.header-swiper {
+    color: $white;
+    height: 50px;
+    
+    .slide {
+        height: 30px;
+        margin: 0;
+        padding: 10px;
+        background-color: $primarycolor;
+        font-weight: 500;
+        letter-spacing: 5.5px;
+        font-size: 20px;
+        line-height: 29px;
 
-            p:hover {
-                text-decoration: underline;
-                text-decoration-color: $mediumgreen;
-                text-decoration-thickness: 2px;
-                cursor: pointer;
-            }
+        p:hover {
+            text-decoration: underline;
+            text-decoration-color: $mediumgreen;
+            text-decoration-thickness: 2px;
+            cursor: pointer;
+        }
+    }
+}
+
+.v-app-bar {
+    position: relative !important;
+}
+
+.v-toolbar__content {
+    height: fit-content;
+    background-color: $primarycolor;
+    color: $white;
+    transition: background-color 1s;
+
+    a {
+        color: $white;
+        text-decoration: none;
+    }
+
+    button {
+        border-radius: 50px;
+        text-transform: initial;
+    }
+
+    
+}
+
+.v-toolbar__content:hover {
+    background-color: $white;
+
+    a, span {
+        color: $primarycolor;
+        svg path{
+            stroke: $primarycolor;
         }
     }
 
-    #app-header {
-        height: fit-content;
-        margin-top: 40px;
-        background-color: $primarycolor;
-        color: $white;
-        transition: background-color 1s;
-
-        #content {
-            width: 100%;
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        a {
-            color: $white;
-            text-decoration: none;
-        }
-
-        button {
-            border-radius: 50px;
-            text-transform: initial;
-        }
-
-        :hover {
-            background-color: $white;
-
-            a, span {
-                color: $primarycolor;
-                svg path{
-                    stroke: $primarycolor;
-                }
-            }
-
-            button {
-                border-color: $primarycolor;
-            }
-
-        }
+    button {
+        border-color: $primarycolor;
     }
 }
