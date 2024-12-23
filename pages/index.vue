@@ -27,6 +27,7 @@
             </v-col>
         </v-row>
         <Recipes />
+        <About />
     </v-main>
 </template>
 

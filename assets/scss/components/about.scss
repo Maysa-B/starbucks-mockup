@@ -1,0 +1,30 @@
+#about {
+    background-color: #FFF;
+    color: $primarycolor;
+    padding: 60px;
+
+    .detail-text {
+        color: $starbucksgreen;
+        letter-spacing: 4px;
+        font-weight: 600;
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    svg path{
+        stroke: $primarycolor;
+    }
+
+    .serif-text {
+        font-size: 70px;
+        width: 500px;
+        line-height: 60px;
+        margin-bottom: 15px;
+    }
+
+    p {
+        max-width: 500px;
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
+}
