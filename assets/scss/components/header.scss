@@ -26,10 +26,10 @@
 }
 
 .v-toolbar__content {
+    transition: background-color 1s !important;
     height: fit-content;
     background-color: $primarycolor;
     color: $white;
-    transition: background-color 1s;
 
     a {
         color: $white;
