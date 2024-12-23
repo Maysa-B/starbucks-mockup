@@ -26,6 +26,7 @@
                 <img src="https://www.starbucksathome.com/br/media/wysiwyg/roastBeanDesktop.png" >
             </v-col>
         </v-row>
+        <Recipes />
     </v-main>
 </template>
 

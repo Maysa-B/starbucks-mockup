@@ -1,0 +1,31 @@
+#recipes {
+    padding: 50px;
+    padding-bottom: 150px;
+    text-align: center;
+    color: $primarycolor;
+
+    .swiper-slide {
+        background-color: $neutral;
+        padding-bottom: 50px;
+    }
+
+    .serif-text {
+        font-size: 45px;
+    }
+    
+    .detail-text {
+        color: $starbucksgreen;
+    }
+
+    .swiper-button-prev {
+        transform: scaleX(1);
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+        color: $primarycolor;
+
+        :hover {
+            height: initial;
+        }
+    }
+}
