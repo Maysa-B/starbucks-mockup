@@ -15,31 +15,30 @@
             :modules="[SwiperEffectCreative, SwiperNavigation]"
             :creative-effect="{ prev: { shadow: false, translate: ['-20%', 0, -1] }, next: { translate: ['100%', 0, 0] } }"
         >
-            <swiper-slide v-for="(r, i) in recipes" :key="`recipe-${i}`">
-                <v-row class="slide d-flex align-center justify-center">
-                   <v-col style="background-image: url('https://www.starbucksathome.com/br/media/wysiwyg/backgroundCarousel.svg'); background-size: 550px; background-position: center;">
-                    <img width="500px" :src="r.img"></img>
-                    <p>{{ r.title }}</p>
-                   </v-col>
-                </v-row>
-                <div class="swiper-button-prev">
-                    <v-row class="slide d-flex align-center justify-center">
-                        <v-col>
-                            <div :style="`background-image: linear-gradient(90deg, rgba(242, 240, 235, 1) 30%, rgba(242, 240, 235, 0) 100%), url(${getPrev(i).img}); width: 400px; height: 400px; background-size: cover; background-position: center;`"></div>
+        <swiper-slide v-for="(r, i) in recipes" :key="`recipe-${i}`">
+                <v-row class="d-flex align-center">
+                    <div class="swiper-button-prev">
+                        <v-col class="recipe-card">
+                            <div :style="`background-image: linear-gradient(270deg, rgba(242, 240, 235, 0) 30%, rgba(242, 240, 235, 1) 100%), url(${getPrev(i).img}); background-size: 400px; width: 400px; height: 400px; background-position: center;`"></div>
                             <p>{{ getPrev(i)?.title }}</p>
                         </v-col>
-                    </v-row>
-                </div>
-                <div class="swiper-button-next">
-                    <v-row class="slide d-flex align-center justify-center">
-                        <v-col>
-                            <div :style="`background-image: linear-gradient(90deg, rgba(242, 240, 235, 0) 30%, rgba(242, 240, 235, 1) 100%), url(${getNext(i).img}); width: 400px; height: 400px; background-size: cover; background-position: center;`"></div>
+                    </div>
+                    <v-col class="recipe-card" style="background-image: url('https://www.starbucksathome.com/br/media/wysiwyg/backgroundCarousel.svg'); background-size: 650px; background-position: top;">
+                        <div class="d-flex justify-center">
+                            <v-img width="500px" height="400px" :src="r.img"></v-img>
+                        </div>
+                        <p>{{ r.title }}</p>
+                    </v-col>
+                    <div class="swiper-button-next">
+                        <v-col class="recipe-card">
+                            <div :style="`background-image: linear-gradient(90deg, rgba(242, 240, 235, 0) 30%, rgba(242, 240, 235, 1) 100%), url(${getNext(i).img}); background-size: 400px; width: 400px; height: 400px; background-position: center;`"></div>
                             <p>{{ getNext(i)?.title }}</p>
                         </v-col>
-                    </v-row>
-                </div>
+                    </div>
+                </v-row>
             </swiper-slide>
         </swiper>
+        <a class="link" href="#">Mais receitas</a>
     </v-col>
 </template>
 
