@@ -1,0 +1,42 @@
+#footer {
+    color: $white;
+    background-color: $primarycolor;
+    position: relative;
+    font-size: 13px;
+    height: min-content;
+    padding: 50px;
+
+    p {
+        text-align: center;
+    }
+
+    img {
+        position: absolute;
+        top: 8px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #text-field {
+        color: $white;
+        border-bottom: 1px solid rgba(206, 227, 221, 0.28);
+        border-radius: 8px;
+        width: 500px;
+        height: 30px;
+        min-height: 0;
+        font-size: 13px;
+    }
+
+    .v-messages__message {
+        color: $error;
+        font-size: 10px;
+        text-align: center;
+    }
+
+    #register {
+        button {
+            text-transform: initial;
+            font-weight: 600;
+        }
+    }
+}
