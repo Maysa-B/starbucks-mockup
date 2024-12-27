@@ -1,18 +1,20 @@
 <template>
     <swiper
         :loop="true"
-        :effect="'creative'"
+        :effect="'fade'"
         :slides-per-view="1"
         :navigation="{
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         }"
-        :speed="300"
+        :speed="500"
         :pagination="{ clickable: true }"
-        :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperPagination, SwiperNavigation]"
+        :modules="[SwiperAutoplay, SwiperEffectFade, SwiperPagination, SwiperNavigation]"
         @autoplayTimeLeft="onAutoplayTimeLeft"
         :autoplay="{ delay: 5000, disableOnInteraction: false }"
-        :creative-effect="{ prev: { shadow: false, translate: ['-20%', 0, -1] }, next: { translate: ['100%', 0, 0] } }"
+        :fadeEffect="{
+            crossFade: true
+        }"
     >
         <swiper-slide v-for="(s, i) in slides" :key="`s-${i}`">
             <div :style="`background-image: url(${s.desktop}); width: 100%; height: 700px; background-position: center center; background-size: 100%;background-repeat: no-repeat;`">
