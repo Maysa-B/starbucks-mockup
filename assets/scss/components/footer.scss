@@ -5,12 +5,13 @@
     font-size: 13px;
     height: min-content;
     padding: 50px;
+    padding-bottom: 20px;
 
     p {
         text-align: center;
     }
 
-    img {
+    #logo-center {
         position: absolute;
         top: 8px;
         left: 50%;
@@ -21,7 +22,7 @@
         color: $white;
         border-bottom: 1px solid rgba(206, 227, 221, 0.28);
         border-radius: 8px;
-        width: 500px;
+        width: 600px;
         height: 30px;
         min-height: 0;
         font-size: 13px;
@@ -33,10 +34,46 @@
         text-align: center;
     }
 
+    .custom-placeholer-color input::placeholder {
+        color: $white !important;
+        opacity: 1;
+    }
+
     #register {
         button {
             text-transform: initial;
             font-weight: 600;
         }
+    }
+
+    a {
+        text-decoration: none;
+        color: $white;
+    }
+
+    .about a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+    .nav {
+        margin-top: 40px;
+        opacity: 0.52;
+        font-size: 13px;
+        width: 70%;
+    }
+
+    .logos {
+        margin-top: 40px !important;
+        width: 30%;
+        margin: 0;
+    }
+
+    .end {
+        opacity: 0.52;
+        font-size: 10px;
     }
 }
