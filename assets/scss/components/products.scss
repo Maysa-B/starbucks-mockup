@@ -28,7 +28,8 @@
         }
 
         .by {
-            font-size: 15px;
+            font-size: 16px;
+            font-family: $fontdetail;
         }
 
         .discount {
@@ -51,5 +52,16 @@
             color: $white;
         }
         
+    }
+
+    .avaliation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: small;
+
+        svg {
+            width: 20px;
+        }
     }
 }
