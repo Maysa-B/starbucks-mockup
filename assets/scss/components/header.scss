@@ -42,8 +42,11 @@
 }
 
 .v-toolbar__content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
     transition: background-color 1s !important;
-    height: fit-content;
+    height: max-content !important;
     
     a {
         color: $white;
@@ -71,8 +74,17 @@
     }
 }
 
-#app-bar {
+#app-header {
     .show {
         transform: translate3d(0, 0, 0) !important;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .submenu {
+        padding: 30px;
+        transition: height 1s !important;
     }
 }
