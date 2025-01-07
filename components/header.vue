@@ -18,7 +18,7 @@
                 </v-row>
             </swiper-slide>
         </swiper>
-        <v-app-bar scroll-behavior="hide elevate" scroll-threshold="290" :class="`${ showFirstRow ? 'top-30' : ''}`" id="app-header">
+        <v-app-bar scroll-behavior="hide elevate" scroll-threshold="290" :class="`${ showHero ? 'show' : ''} ${ color }`" id="app-header">
             <v-spacer></v-spacer>
             <div class="d-flex justify-space-between align-center w-25">
                 <nuxt-link v-for="m, i in menu" :key="`menu-${i}`" to="#">{{ m.title }}</nuxt-link>
@@ -100,7 +100,7 @@
 
     const color = ref('green')
     const showNavbar = ref(true)
-    const showFirstRow = ref(true)
+    const showHero = ref(true)
     let lastScrollPosition = ref(0)
 
     function onScroll () {
@@ -108,7 +108,7 @@
         
         if (currentScrollPosition < 0) return
 
-        if (currentScrollPosition > 200) {
+        if (currentScrollPosition > 250) {
             color.value = 'white'
         } else {
             color.value = 'green'
@@ -117,9 +117,9 @@
         if (Math.abs(currentScrollPosition - lastScrollPosition.value) < 60) return 
 
         if(currentScrollPosition < lastScrollPosition.value) {
-            showNavbar.value = true
+            showHero.value = true
         }  else {
-            showNavbar.value = false
+            showHero.value = false
         }
        
         lastScrollPosition.value = currentScrollPosition

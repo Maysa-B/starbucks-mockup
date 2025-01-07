@@ -21,16 +21,30 @@
     }
 }
 
-.v-app-bar {
-    position: relative !important;
+.green .v-toolbar__content {
+    background-color: $primarycolor;
+    color: $white;
+}
+
+.white .v-toolbar__content {
+    background-color: $white;
+
+    a, span {
+        color: $primarycolor;
+        svg path{
+            stroke: $primarycolor;
+        }
+    }
+
+    button {
+        border-color: $primarycolor;
+    }
 }
 
 .v-toolbar__content {
     transition: background-color 1s !important;
     height: fit-content;
-    background-color: $primarycolor;
-    color: $white;
-
+    
     a {
         color: $white;
         text-decoration: none;
@@ -40,8 +54,6 @@
         border-radius: 50px;
         text-transform: initial;
     }
-
-    
 }
 
 .v-toolbar__content:hover {
@@ -56,5 +68,11 @@
 
     button {
         border-color: $primarycolor;
+    }
+}
+
+#app-bar {
+    .show {
+        transform: translate3d(0, 0, 0) !important;
     }
 }
