@@ -22,7 +22,7 @@
             <v-row class="menu">
                 <v-spacer></v-spacer>
                 <div class="d-flex justify-space-between align-center w-25">
-                    <nuxt-link @mouseover="handleDesktopMenuItemClick($event, m)" v-for="m, i in menu" :key="`menu-${i}`" to="#">{{ m.title }}</nuxt-link>
+                    <nuxt-link class="menu-item" @mouseover="handleDesktopMenuItemClick($event, m)" v-for="m, i in menu" :key="`menu-${i}`" to="#">{{ m.title }}</nuxt-link>
                 </div>
                 <v-spacer></v-spacer>
                 <img  width="50px" src="https://www.starbucksathome.com/br/static/version1730292575/frontend/Webjump/starbucks/pt_BR/images/logo.svg"></img>
@@ -36,10 +36,12 @@
                 </nav>
                 <v-spacer></v-spacer>
             </v-row>
-            <v-row v-if="openSubmenu" class="submenu">
-                <div v-for="s, i in selectedItem?.submenu" :key="`submenu-${i}`">
+            <v-row v-if="openSubmenu" class="submenu d-flex justify-center align-center">
+                <v-col v-for="s, i in selectedItem?.submenu" :key="`submenu-${i}`" :class="`item ${s.class}`">
+                    <img v-if="s.img" :src="s.img" :alt="s.title">
                     <p>{{ s.title }}</p>
-                </div>
+                    <p class="subtitle">{{ s.subtitle }}</p>
+                </v-col>
             </v-row>
         </v-app-bar>
     </div>
@@ -79,6 +81,7 @@
                 },
                 {
                     title: 'Receita do mês',
+                    class: 'recipe',
                     img: 'https://www.starbucksathome.com/br/static/version1730292575/frontend/Webjump/starbucks/pt_BR/images/LATTE_MACCHIATO.png'
                 }
             ]
