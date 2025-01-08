@@ -17,6 +17,7 @@
     "nuxt-swiper": "^1.1.0",
     "sass": "^1.80.4",
     "sass-loader": "^16.0.2",
+    "vite-plugin-vuetify": "^2.0.4",
     "vuetify": "^3.7.3"
   }
 }
